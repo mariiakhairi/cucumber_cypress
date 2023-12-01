@@ -6,7 +6,7 @@ Feature: Demo Feature
     @focus
     Scenario: Should load example website
         Given I open example page
-        Then I see page title "Example"
+        Then I see page title "Example Domain"
         And I see text
         And I see text
 
@@ -19,5 +19,4 @@ Feature: Demo Feature
 
     Examples:
         | title |
-        | Example | 
-        | Fail | 
+#

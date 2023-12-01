@@ -7,7 +7,6 @@ module.exports = defineConfig({
       on("file:preprocessor", cucumber());
     },
     video: false,
-    specPattern:
-      "cypress/e2e/cucumber-tests/step-definitions/*.{feature,features}",
+    specPattern: "cypress/e2e/cucumber-tests/features/*.{feature,features}",
   },
 });
