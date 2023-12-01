@@ -8,7 +8,9 @@ Welcome to the Cypress Cucumber Example Project! This project demonstrates the i
 - [Getting Started](#getting-started)
 - [Features](#features)
 - [Folder Structure](#folder-structure)
+- [VSCode Configuration](#vscode-configuration)
 - [Usage](#usage)
+
 
 ## Introduction
 
@@ -36,10 +38,19 @@ Explore the features and capabilities demonstrated in this example project:
 The repository is organized as follows:
 
 - `cypress/`: Contains the Cypress test files.
-  - `end2end/`: Holds feature files and step definitions.
+  - `e2e/`: Holds feature files and step definitions.
   - `support/`: Includes additional support files and utilities.
   - `fixtures/`: Stores test data and sample payloads.
 
+## VSCode Configuration
+
+For seamless integration with VSCode, consider adding the following configuration to your `settings.json` file:
+
+```json
+"cucumberautocomplete.steps": [
+    "cypress/e2e/cucumber-tests/step_definitions/*.js",
+],
+"cucumberautocomplete.syncfeatures": "cypress/e2e/cucumber-tests/features/*feature",
 
 ## Usage
 
@@ -47,3 +58,4 @@ To run the Cypress Cucumber tests, use the following command:
 
 ```bash
 npm test
+
