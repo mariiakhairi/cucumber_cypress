@@ -36,10 +36,10 @@ Explore the features and capabilities demonstrated in this example project:
 The repository is organized as follows:
 
 - `cypress/`: Contains the Cypress test files.
-  - `integration/`: Holds feature files and step definitions.
+  - `end2end/`: Holds feature files and step definitions.
   - `support/`: Includes additional support files and utilities.
-- `fixtures/`: Stores test data and sample payloads.
-- `plugins/`: Includes Cypress plugins.
+  - `fixtures/`: Stores test data and sample payloads.
+
 
 ## Usage
 
