@@ -1,10 +1,10 @@
-import { Given } from "cypress-cucumber-preprocessor/steps";
+import { Given, Then, When } from "cypress-cucumber-preprocessor/steps";
 
 Given("I open example page", () => {
   cy.visit("https://www.example.com");
 });
 
-Then(`I see page title {string}`, (name) => {
+Then("I see page title {string}", (name) => {
   cy.get("h1").should("be.visible");
   cy.get("h1").should("contain", `${name}`);
 });

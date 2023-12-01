@@ -8,14 +8,13 @@ Feature: Demo Feature
         Given I open example page
         Then I see page title "Example Domain"
         And I see text
-        And I see text
 
 
     Scenario Outline: Should load example website
         Given I open example page
         Then I see page title "<title>"
         And I see text
-        And I see text
+  
 
     Examples:
         | title |
