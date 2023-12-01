@@ -1,0 +1,33 @@
+{
+  "name": "cucumber_cypress",
+  "version": "1.0.0",
+  "description": "Welcome to the Cypress Cucumber Example Project! This project demonstrates the integration of Cypress with Cucumber for behavior-driven development (BDD). Whether you're new to Cypress or Cucumber, or looking to explore BDD practices, you'll find valuable examples and best practices here.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "open": "cypress open",
+    "all": "cypress run --spec 'cypress/e2e/*' -- reporter json --browser chrome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariiakhairi/cucumber_cypress.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariiakhairi/cucumber_cypress/issues"
+  },
+  "homepage": "https://github.com/mariiakhairi/cucumber_cypress#readme",
+  "dependencies": {
+    "cypress": "^13.6.0",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/e2e/cucumber-tests/",
+    "cucumberJson": {
+      "generate": false
+    }
+  }
+}
