@@ -51,7 +51,7 @@ For seamless integration with VSCode, consider adding the following configuratio
     "cypress/e2e/cucumber-tests/step_definitions/*.js",
 ],
 "cucumberautocomplete.syncfeatures": "cypress/e2e/cucumber-tests/features/*feature",
-
+```
 ## Usage
 
 To run the Cypress Cucumber tests, use the following command:
